@@ -1,178 +1,171 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>PhD Application Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#000000", secondary: "#F0F0F0", accent: "#C0A062", "text-primary": "#333333", "background-light": "#f7f7f7", "background-dark": "#191919"}, fontFamily: {display: "Inter", body: ["Lato", "sans-serif"]}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
-<style>
-        body {
-            font-family: 'Lato', sans-serif;
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammad Fazail Bangash | Research Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#000000",
+            secondary: "#F0F0F0",
+            accent: "#C0A062",
+            "text-primary": "#333333",
+            "background-light": "#f7f7f7",
+            "background-dark": "#191919"
+          },
+          fontFamily: {
+            display: "Inter",
+            body: ["Lato", "sans-serif"]
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          }
         }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Lora', serif;
-        }
-    </style>
+      }
+    };
+  </script>
+  <style>
+    body { font-family: 'Lato', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Lora', serif; }
+  </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-text-primary dark:text-gray-200">
-<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-secondary dark:border-gray-700 bg-background-light dark:bg-background-dark px-6 md:px-10 py-3">
-<div class="flex items-center gap-4 text-primary dark:text-white">
-<span class="material-symbols-outlined text-2xl">school</span>
-<h2 class="font-display text-lg font-bold leading-tight tracking-[-0.015em]">John Doe</h2>
+<div class="relative flex flex-col min-h-screen w-full overflow-x-hidden">
+  <header class="sticky top-0 z-50 flex items-center justify-between border-b border-secondary dark:border-gray-700 bg-background-light dark:bg-background-dark px-6 md:px-10 py-3">
+    <div class="flex items-center gap-4 text-primary dark:text-white">
+      <span class="material-symbols-outlined text-2xl">school</span>
+      <h2 class="font-display text-lg font-bold">Mohammad Fazail Bangash</h2>
+    </div>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#about" class="font-body text-sm font-medium hover:text-accent">About</a>
+      <a href="#research" class="font-body text-sm font-medium hover:text-accent">Research</a>
+      <a href="#publications" class="font-body text-sm font-medium hover:text-accent">Publications</a>
+      <a href="#cv" class="font-body text-sm font-medium hover:text-accent">CV</a>
+      <a href="#contact" class="font-body text-sm font-medium hover:text-accent">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-1">
+    <!-- About Section -->
+    <section id="about" class="px-6 md:px-10 py-16 md:py-20">
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div class="w-48 h-48 md:w-60 md:h-60 flex-shrink-0">
+          <!-- You can replace this image yourself -->
+          <img src="screen.png" alt="Profile photo of Mohammad Fazail Bangash" class="w-full h-full rounded-full object-cover shadow-lg"/>
+        </div>
+        <div class="text-center md:text-left">
+          <h1 class="font-display text-4xl md:text-5xl font-bold">Mohammad Fazail Bangash</h1>
+          <p class="font-body mt-2 text-lg text-text-primary dark:text-gray-300">Research Assistant | Teaching Assistant | Mechanical Engineer</p>
+          <p class="font-body mt-4 max-w-2xl text-base text-text-primary dark:text-gray-400">
+            Mechanical Engineer specializing in AI-driven fault diagnosis, structural health monitoring, in-situ monitoring of additive manufacturing processes, and digital twins for AM systems. 
+            I bring 2+ years of experience as a research and teaching assistant, with expertise in machine learning, deep learning, and condition monitoring. 
+            My research focuses on developing digital twin frameworks, applying AI/ML/DL for predictive maintenance, and enabling real-time process control in additive manufacturing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Projects -->
+    <section id="research" class="bg-secondary dark:bg-gray-800/20 py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-6 md:px-10">
+        <h2 class="font-display text-3xl font-bold text-center mb-12">Research Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-background-light dark:bg-background-dark rounded-lg shadow-md overflow-hidden">
+            <div class="aspect-video bg-cover bg-center" style='background-image: url("https://www.mdpi.com/journal/sensors")'></div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold">AI-Based Multi-Signals Fault Diagnosis of Induction Motors</h3>
+              <p class="font-body mt-2 text-base text-text-primary dark:text-gray-400">
+                Developed AI models for multi-sensor fault diagnosis of induction motors using deep learning and signal fusion techniques.
+                Integrated transfer learning and vibration data analytics for predictive maintenance applications.
+              </p>
+              <p class="font-body text-sm text-gray-500 mt-2">Under Review – IEEE Access (2025)</p>
+            </div>
+          </div>
+          <div class="bg-background-light dark:bg-background-dark rounded-lg shadow-md overflow-hidden">
+            <div class="aspect-video bg-cover bg-center" style='background-image: url("https://www.sciencedirect.com/journal/sustainable-futures")'></div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold">Fault Detection in Laser Additive Manufacturing using Digital Twins</h3>
+              <p class="font-body mt-2 text-base text-text-primary dark:text-gray-400">
+                Proposed a digital twin framework with reinforcement and transfer learning to detect faults during additive manufacturing of functionally graded materials.
+              </p>
+              <p class="font-body text-sm text-gray-500 mt-2">Draft – Sustainable Futures (Springer, 2025)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-16 md:py-20 px-6 md:px-10">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-display text-3xl font-bold text-center mb-12">Publications</h2>
+        <ul class="font-body space-y-3 text-text-primary dark:text-gray-400 list-disc list-inside">
+          <li><b>AI-Based Multi-Signals Fault Diagnosis of Induction Motor</b> – IEEE Access (Under Review, 2025)</li>
+          <li><b>AI-Driven Resilient Fault Diagnosis of Bearings in Rotating Machinery</b> – Sensors (MDPI, 2025)</li>
+          <li><b>Fault Detection in Laser AM of FGMs Using Digital Twin</b> – Sustainable Futures (Springer, 2025)</li>
+          <li><b>Intelligent Fault Diagnosis of Induction Motors Using Deep Learning</b> – ICOVP 2025 (Springer, Accepted)</li>
+          <li><b>Design of a Low RPM Generator for Energy Harnessing</b> – Wind Engineering (Sage, 2025)</li>
+          <li><b>Monitoring Magnetic Flux Density of Transformers</b> – IEEE IT & Industrial Technologies (2024)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CV Download -->
+    <section id="cv" class="bg-secondary dark:bg-gray-800/20 py-16 md:py-20 text-center">
+      <div class="max-w-4xl mx-auto px-6 md:px-10">
+        <h2 class="font-display text-3xl font-bold mb-4">Curriculum Vitae</h2>
+        <p class="font-body text-lg mb-8">For a detailed overview of my academic and professional experience, please download my CV below.</p>
+        <a href="FazailBangash_CV.pdf" target="_blank" class="inline-flex items-center justify-center rounded-md h-12 px-6 bg-accent text-white text-base font-bold hover:bg-accent/90 shadow-lg">
+          <span class="material-symbols-outlined mr-2">download</span>
+          <span>Download CV (PDF)</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 md:py-20 px-6 md:px-10">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="font-display text-3xl font-bold text-center mb-12">Contact Me</h2>
+        <div class="text-center mb-8">
+          <p class="font-body text-lg">Email: <a href="mailto:fazailbangash1@gmail.com" class="text-accent hover:underline">fazailbangash1@gmail.com</a></p>
+          <p class="font-body text-lg">Phone: +92 315 9226855</p>
+          <p class="font-body text-lg">Location: Swabi, Khyber Pakhtunkhwa, Pakistan</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-background-light dark:bg-background-dark border-t border-secondary dark:border-gray-700 py-6">
+    <div class="max-w-5xl mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between items-center">
+      <p class="font-body text-sm text-gray-500">© 2025 Mohammad Fazail Bangash. All Rights Reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="https://www.linkedin.com/" target="_blank" class="text-gray-500 hover:text-accent">
+          <span class="sr-only">LinkedIn</span>
+          <i class="fa-brands fa-linkedin text-2xl"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Ali-Jafry" target="_blank" class="text-gray-500 hover:text-accent">
+          <span class="sr-only">ResearchGate</span>
+          <i class="fa-brands fa-researchgate text-2xl"></i>
+        </a>
+        <a href="https://giki.edu.pk/" target="_blank" class="text-gray-500 hover:text-accent">
+          <span class="sr-only">GIKI</span>
+          <i class="fa-solid fa-university text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="font-body text-sm font-medium leading-normal text-primary dark:text-gray-300 hover:text-accent dark:hover:text-accent" href="#about">About</a>
-<a class="font-body text-sm font-medium leading-normal text-primary dark:text-gray-300 hover:text-accent dark:hover:text-accent" href="#research">Research</a>
-<a class="font-body text-sm font-medium leading-normal text-primary dark:text-gray-300 hover:text-accent dark:hover:text-accent" href="#publications">Publications</a>
-<a class="font-body text-sm font-medium leading-normal text-primary dark:text-gray-300 hover:text-accent dark:hover:text-accent" href="#cv">CV</a>
-<a class="font-body text-sm font-medium leading-normal text-primary dark:text-gray-300 hover:text-accent dark:hover:text-accent" href="#contact">Contact</a>
-</nav>
-<button class="md:hidden text-primary dark:text-white">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</header>
-<main class="flex-1">
-<section class="px-6 md:px-10 py-16 md:py-20" id="about">
-<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
-<div class="w-48 h-48 md:w-60 md:h-60 flex-shrink-0">
-<img class="w-full h-full rounded-full object-cover shadow-lg" data-alt="Professional headshot of John Doe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfpxq9Y1e0LdB530dpK-q1v4U7fsHreD341AfrfUEciSSkijc3-VJrXIah9R7eRCvgpeDIfB1sr6n_Cb5h3pVSDJqIL38rhUAIBIsTbZJj3XK9Z0lq4d_tEBwUKtVZi3vBhsAbIU9q9o9uJcHu3C4MuN8Oyh__gyD7TLQe_hn2D1FIkDd79ovEsnQ69VP8gtq0U7LR95NjTb7v90Jd-kwW7C57XqgO0Bvng62jMUPg6GtAm4SjBHJD6_Qvl4GNjolVCFbPvAzQfOr5"/>
-</div>
-<div class="text-center md:text-left">
-<h1 class="font-display text-4xl md:text-5xl font-bold text-primary dark:text-white">John Doe</h1>
-<p class="font-body mt-2 text-lg text-text-primary dark:text-gray-300">PhD Candidate at the University of Science</p>
-<p class="font-body mt-4 max-w-2xl text-base text-text-primary dark:text-gray-400">
-                                I am a passionate PhD candidate specializing in Artificial Intelligence and Machine Learning. My research focuses on developing robust and interpretable models for real-world applications, with a particular interest in healthcare and natural language processing. I aim to contribute to the advancement of AI to solve complex societal challenges.
-                            </p>
-</div>
-</div>
-</section>
-<section class="bg-secondary dark:bg-gray-800/20 py-16 md:py-20" id="research">
-<div class="max-w-5xl mx-auto px-6 md:px-10">
-<h2 class="font-display text-3xl font-bold text-center text-primary dark:text-white mb-12">Research Projects</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="p-0 @container bg-background-light dark:bg-background-dark rounded-lg shadow-md overflow-hidden">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract representation of AI in healthcare" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOpKUXcDcReOxqCB5DX5r0-vejomcvLYNxKYGy9p5x6KYKKnuOsFL94nteEsYtoOSQGjVX2aq3S8nplWFA2Rd50nF8hnTpulyxhYVnzA9ToUyc7M_mumJPB3mAtrwh7CzDUBUf3nfW3Zjn1Q9jEz5dGDouzkUDqO2IEVFOtabs4jFPnuvq7m301ejV0wIFtTntEmVHLfRtE0Qq-9rqvAKAVNq_RufYZSnKkwmi1qJZOfpQBuEBaHEzSvOMS_GsM9EhoLwdfnC5MkPA");'></div>
-<div class="p-6">
-<h3 class="font-display text-xl font-bold text-primary dark:text-white">Project Alpha: AI in Healthcare</h3>
-<p class="font-body text-base text-text-primary dark:text-gray-400 mt-2">
-                                        Developing a machine learning model to predict patient outcomes based on electronic health records. This project aims to improve diagnostic accuracy and personalize treatment plans.
-                                    </p>
-<p class="font-body text-sm text-gray-500 dark:text-gray-500 mt-2">Published in JMIR</p>
-<button class="mt-4 flex items-center justify-center rounded-md h-10 px-4 bg-accent text-white text-sm font-bold leading-normal tracking-wide hover:bg-accent/90">
-<span>Learn More</span>
-</button>
-</div>
-</div>
-<div class="p-0 @container bg-background-light dark:bg-background-dark rounded-lg shadow-md overflow-hidden">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract representation of natural language processing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArv4lRu8ErYj8cNmjPgJ7i-Ta-BDP8o5M6wKjFma9nmkqxJzyaUk-IM7qnSNt4S2rEUrbnfSLNvQ95Ym3Ze7tC2dWfCiGEgNA7AorqwYVufEqX_dcN0AW8PqNOamcvRDsF5q3_YaYuJTQf8i-BZU3cet0Z1-ff16FE_kd1ulXKTbIttjeR97mLYSV3QTIItdA14iMC9JjkY7o0ZC7O-BzTK0oztwRn8tdFxULlCC7v51rxYpKpxi6mLLHp8VEfhTZcIZmr1vAfmrO3");'></div>
-<div class="p-6">
-<h3 class="font-display text-xl font-bold text-primary dark:text-white">Project Beta: Natural Language Processing</h3>
-<p class="font-body text-base text-text-primary dark:text-gray-400 mt-2">
-                                        Building a novel NLP model for sentiment analysis in social media data. The goal is to understand public opinion dynamics and its impact on societal events.
-                                    </p>
-<p class="font-body text-sm text-gray-500 dark:text-gray-500 mt-2">Presented at ACL 2023</p>
-<button class="mt-4 flex items-center justify-center rounded-md h-10 px-4 bg-accent text-white text-sm font-bold leading-normal tracking-wide hover:bg-accent/90">
-<span>View Publication</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-16 md:py-20 px-6 md:px-10" id="publications">
-<div class="max-w-4xl mx-auto">
-<h2 class="font-display text-3xl font-bold text-center text-primary dark:text-white mb-12">Publications</h2>
-<div class="space-y-4" x-data="{ open: '2023' }">
-<div class="border border-secondary dark:border-gray-700 rounded-lg">
-<button @click="open = open === '2023' ? '' : '2023'" class="w-full flex justify-between items-center p-4 font-display text-lg font-bold text-primary dark:text-white bg-secondary/30 dark:bg-gray-800/30 rounded-t-lg">
-<span>2023</span>
-<span :class="open === '2023' ? 'rotate-180' : ''" class="material-symbols-outlined">expand_more</span>
-</button>
-<div class="p-4 border-t border-secondary dark:border-gray-700" x-show="open === '2023'" x-transition="">
-<ul class="font-body space-y-3 list-disc list-inside text-text-primary dark:text-gray-400">
-<li>Doe, J., &amp; Smith, A. (2023). A Novel Approach to Sentiment Analysis. In *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics*. Toronto, Canada. <a class="text-accent hover:underline" href="#">Full Text</a></li>
-<li>Doe, J., &amp; Brown, C. (2023). Interpretable AI for Clinical Decision Support. *Journal of Medical Internet Research*, 25(1), e12345. <a class="text-accent hover:underline" href="#">Full Text</a></li>
-</ul>
-</div>
-</div>
-<div class="border border-secondary dark:border-gray-700 rounded-lg">
-<button @click="open = open === '2022' ? '' : '2022'" class="w-full flex justify-between items-center p-4 font-display text-lg font-bold text-primary dark:text-white bg-secondary/30 dark:bg-gray-800/30 rounded-t-lg">
-<span>2022</span>
-<span :class="open === '2022' ? 'rotate-180' : ''" class="material-symbols-outlined">expand_more</span>
-</button>
-<div class="p-4 border-t border-secondary dark:border-gray-700" x-show="open === '2022'" x-transition="">
-<ul class="font-body space-y-3 list-disc list-inside text-text-primary dark:text-gray-400">
-<li>Doe, J. (2022). Early Explorations in Machine Learning. *University of Science Technical Report*.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-secondary dark:bg-gray-800/20 py-16 md:py-20" id="cv">
-<div class="max-w-4xl mx-auto px-6 md:px-10 text-center">
-<h2 class="font-display text-3xl font-bold text-primary dark:text-white mb-4">Curriculum Vitae</h2>
-<p class="font-body text-lg text-text-primary dark:text-gray-400 mb-8">For a detailed overview of my academic and professional experience, please download my CV.</p>
-<a class="inline-flex items-center justify-center rounded-md h-12 px-6 bg-accent text-white text-base font-bold leading-normal tracking-wide hover:bg-accent/90 shadow-lg" href="#">
-<span class="material-symbols-outlined mr-2">download</span>
-<span>Download CV (PDF)</span>
-</a>
-</div>
-</section>
-<section class="py-16 md:py-20 px-6 md:px-10" id="contact">
-<div class="max-w-2xl mx-auto">
-<h2 class="font-display text-3xl font-bold text-center text-primary dark:text-white mb-12">Contact Me</h2>
-<form action="#" class="space-y-6 font-body" method="POST">
-<div>
-<label class="block text-sm font-medium text-text-primary dark:text-gray-300" for="name">Name</label>
-<input class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white sm:text-sm" id="name" name="name" required="" type="text"/>
-</div>
-<div>
-<label class="block text-sm font-medium text-text-primary dark:text-gray-300" for="email">Email</label>
-<input class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white sm:text-sm" id="email" name="email" required="" type="email"/>
-</div>
-<div>
-<label class="block text-sm font-medium text-text-primary dark:text-gray-300" for="subject">Subject</label>
-<input class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white sm:text-sm" id="subject" name="subject" required="" type="text"/>
-</div>
-<div>
-<label class="block text-sm font-medium text-text-primary dark:text-gray-300" for="message">Message</label>
-<textarea class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white sm:text-sm" id="message" name="message" required="" rows="4"></textarea>
-</div>
-<div>
-<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
-                                    Send Message
-                                </button>
-</div>
-</form>
-</div>
-</section>
-</main>
-<footer class="bg-background-light dark:bg-background-dark border-t border-secondary dark:border-gray-700 py-6">
-<div class="max-w-5xl mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-<p class="font-body text-sm text-gray-500 dark:text-gray-400">© 2024 John Doe. All Rights Reserved.</p>
-<div class="flex space-x-6 mt-4 md:mt-0">
-<a class="text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent" href="#">
-<span class="sr-only">LinkedIn</span>
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path></svg>
-</a>
-<a class="text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent" href="#">
-<span class="sr-only">Google Scholar</span>
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 6v6l12 6 12-6V6L12 0z"></path></svg>
-</a>
-<a class="text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent" href="#">
-<span class="sr-only">ResearchGate</span>
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2.22 18H7.78v-7.07h1.99V18zm6.54-3.32c-1.39 0-2.34-.94-2.34-2.73 0-1.78.95-2.73 2.34-2.73 1.39 0 2.34.95 2.34 2.73 0 1.79-.95 2.73-2.34 2.73zm-3.27-3.32c0 1.15.54 1.83 1.43 1.83.89 0 1.43-.68 1.43-1.83s-.54-1.83-1.43-1.83c-.89 0-1.43.68-1.43 1.83zM18 18h-2.02v-3.52c0-1.01-.48-1.52-1.22-1.52-.75 0-1.22.51-1.22 1.52V18h-2.02V9.93h1.99v.95c.57-.73 1.53-1.05 2.47-1.05 1.76 0 2.99 1.16 2.99 3.23V18z"></path></svg>
-</a>
-</div>
-</div>
-</footer>
-</div>
-</div>
-<script defer="" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-</body></html>
+<script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</body>
+</html>
